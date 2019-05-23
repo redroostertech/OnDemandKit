@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="OnDemandMap_Clone" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="DCM-MT-cHf" id="itk-4l-heo"/>
+                <outlet property="recenterButton" destination="CPH-bq-91X" id="p88-MH-ojM"/>
+                <outlet property="searchButton" destination="7KH-ZO-b6d" id="Mcy-Rm-3b6"/>
+                <outlet property="toggleViewTypeButton" destination="NJP-n2-MG1" id="Crx-C4-5BZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DCM-MT-cHf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-ZO-b6d">
+                    <rect key="frame" x="16" y="36" width="299" height="42"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="42" id="SB7-Bs-ywc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="Search" image="search-sm">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="startSearch:" destination="-1" eventType="touchUpInside" id="eVq-Lq-zPx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPH-bq-91X">
+                    <rect key="frame" x="311" y="599" width="48" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="2Q5-F1-Isa"/>
+                        <constraint firstAttribute="width" constant="48" id="X0S-HD-39f"/>
+                    </constraints>
+                    <state key="normal" image="recenter"/>
+                    <connections>
+                        <action selector="recenterMap:" destination="-1" eventType="touchUpInside" id="cbO-rC-zMs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJP-n2-MG1">
+                    <rect key="frame" x="317" y="36" width="42" height="42"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="yYP-nw-Aaz"/>
+                    </constraints>
+                    <state key="normal" image="list"/>
+                    <connections>
+                        <action selector="toggleViews:" destination="-1" eventType="touchUpInside" id="YCc-A3-LJ4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NJP-n2-MG1" firstAttribute="bottom" secondItem="7KH-ZO-b6d" secondAttribute="bottom" id="7eM-kI-hWY"/>
+                <constraint firstItem="NJP-n2-MG1" firstAttribute="leading" secondItem="7KH-ZO-b6d" secondAttribute="trailing" constant="2" id="HNd-SP-ngk"/>
+                <constraint firstItem="7KH-ZO-b6d" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="JfD-Wo-ccT"/>
+                <constraint firstItem="DCM-MT-cHf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="LVA-cv-yGk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CPH-bq-91X" secondAttribute="bottom" constant="20" id="Vz3-dn-KBQ"/>
+                <constraint firstItem="DCM-MT-cHf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Wxh-n8-Wbb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CPH-bq-91X" secondAttribute="trailing" constant="16" id="Yaz-up-OrZ"/>
+                <constraint firstItem="DCM-MT-cHf" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="arS-Rz-bJC"/>
+                <constraint firstItem="DCM-MT-cHf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bit-1n-6dt"/>
+                <constraint firstItem="NJP-n2-MG1" firstAttribute="top" secondItem="7KH-ZO-b6d" secondAttribute="top" id="cEW-I4-UDM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NJP-n2-MG1" secondAttribute="trailing" constant="16" id="iDt-1o-dUn"/>
+                <constraint firstItem="7KH-ZO-b6d" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="ypg-Si-reR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="92" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="list" width="24" height="24"/>
+        <image name="recenter" width="48" height="48"/>
+        <image name="search-sm" width="24" height="24"/>
+    </resources>
+</document>

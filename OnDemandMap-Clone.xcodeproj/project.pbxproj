@@ -8,13 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CD0C8A6C22904840003EA89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C8A6B22904840003EA89B /* AppDelegate.swift */; };
-		CD0C8A6E22904840003EA89B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C8A6D22904840003EA89B /* ViewController.swift */; };
+		CD0C8A6E22904840003EA89B /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C8A6D22904840003EA89B /* LaunchViewController.swift */; };
 		CD0C8A7122904840003EA89B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0C8A6F22904840003EA89B /* Main.storyboard */; };
 		CD0C8A7422904840003EA89B /* OnDemandMap_Clone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD0C8A7222904840003EA89B /* OnDemandMap_Clone.xcdatamodeld */; };
 		CD0C8A7622904841003EA89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0C8A7522904841003EA89B /* Assets.xcassets */; };
 		CD0C8A7922904841003EA89B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0C8A7722904841003EA89B /* LaunchScreen.storyboard */; };
 		CD0C8A8422904841003EA89B /* OnDemandMap_CloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C8A8322904841003EA89B /* OnDemandMap_CloneTests.swift */; };
 		CD0C8A8F22904841003EA89B /* OnDemandMap_CloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C8A8E22904841003EA89B /* OnDemandMap_CloneUITests.swift */; };
+		CD0C8A9F229048E7003EA89B /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0C8A9D229048E7003EA89B /* MapViewController.xib */; };
+		CD0C8AA122904B1E003EA89B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C8AA022904B1D003EA89B /* LocationManager.swift */; };
+		CD0C8AB12296D792003EA89B /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C8AB02296D792003EA89B /* UIViewController+Ext.swift */; };
+		CD0C8AB32296DF5E003EA89B /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C8AB22296DF5D003EA89B /* CustomMapView.swift */; };
+		CD0C8AB62296E74E003EA89B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C8AB42296E74E003EA89B /* SearchViewController.swift */; };
+		CD0C8AB72296E74E003EA89B /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD0C8AB52296E74E003EA89B /* SearchViewController.xib */; };
+		CD0C8AB922970204003EA89B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0C8AB822970204003EA89B /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +44,7 @@
 /* Begin PBXFileReference section */
 		CD0C8A6822904840003EA89B /* OnDemandMap-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OnDemandMap-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0C8A6B22904840003EA89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD0C8A6D22904840003EA89B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD0C8A6D22904840003EA89B /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		CD0C8A7022904840003EA89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD0C8A7322904840003EA89B /* OnDemandMap_Clone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnDemandMap_Clone.xcdatamodel; sourceTree = "<group>"; };
 		CD0C8A7522904841003EA89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +56,13 @@
 		CD0C8A8A22904841003EA89B /* OnDemandMap-CloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OnDemandMap-CloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0C8A8E22904841003EA89B /* OnDemandMap_CloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDemandMap_CloneUITests.swift; sourceTree = "<group>"; };
 		CD0C8A9022904841003EA89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD0C8A9D229048E7003EA89B /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		CD0C8AA022904B1D003EA89B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		CD0C8AB02296D792003EA89B /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		CD0C8AB22296DF5D003EA89B /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
+		CD0C8AB42296E74E003EA89B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		CD0C8AB52296E74E003EA89B /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		CD0C8AB822970204003EA89B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +114,10 @@
 			isa = PBXGroup;
 			children = (
 				CD0C8A6B22904840003EA89B /* AppDelegate.swift */,
-				CD0C8A6D22904840003EA89B /* ViewController.swift */,
-				CD0C8A6F22904840003EA89B /* Main.storyboard */,
-				CD0C8A7522904841003EA89B /* Assets.xcassets */,
-				CD0C8A7722904841003EA89B /* LaunchScreen.storyboard */,
+				CD0C8ABE2297026C003EA89B /* Resources */,
+				CD0C8AC12297028C003EA89B /* Core */,
+				CD0C8ABD2297025A003EA89B /* Modules */,
+				CD0C8ABC2297024B003EA89B /* Utilities */,
 				CD0C8A7A22904841003EA89B /* Info.plist */,
 				CD0C8A7222904840003EA89B /* OnDemandMap_Clone.xcdatamodeld */,
 			);
@@ -126,6 +140,77 @@
 				CD0C8A9022904841003EA89B /* Info.plist */,
 			);
 			path = "OnDemandMap-CloneUITests";
+			sourceTree = "<group>";
+		};
+		CD0C8ABA2297022D003EA89B /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C8AB42296E74E003EA89B /* SearchViewController.swift */,
+				CD0C8AB52296E74E003EA89B /* SearchViewController.xib */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		CD0C8ABB22970239003EA89B /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C8A9D229048E7003EA89B /* MapViewController.xib */,
+				CD0C8AB822970204003EA89B /* MapViewController.swift */,
+			);
+			path = MapViewController;
+			sourceTree = "<group>";
+		};
+		CD0C8ABC2297024B003EA89B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C8AB02296D792003EA89B /* UIViewController+Ext.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		CD0C8ABD2297025A003EA89B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C8AA022904B1D003EA89B /* LocationManager.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CD0C8ABE2297026C003EA89B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C8AC02297027C003EA89B /* Assets */,
+				CD0C8ABF22970276003EA89B /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD0C8ABF22970276003EA89B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C8A6F22904840003EA89B /* Main.storyboard */,
+				CD0C8A7722904841003EA89B /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CD0C8AC02297027C003EA89B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C8A7522904841003EA89B /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		CD0C8AC12297028C003EA89B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CD0C8A6D22904840003EA89B /* LaunchViewController.swift */,
+				CD0C8ABB22970239003EA89B /* MapViewController */,
+				CD0C8AB22296DF5D003EA89B /* CustomMapView.swift */,
+				CD0C8ABA2297022D003EA89B /* SearchViewController */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +320,8 @@
 				CD0C8A7922904841003EA89B /* LaunchScreen.storyboard in Resources */,
 				CD0C8A7622904841003EA89B /* Assets.xcassets in Resources */,
 				CD0C8A7122904840003EA89B /* Main.storyboard in Resources */,
+				CD0C8AB72296E74E003EA89B /* SearchViewController.xib in Resources */,
+				CD0C8A9F229048E7003EA89B /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +346,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0C8AB32296DF5E003EA89B /* CustomMapView.swift in Sources */,
 				CD0C8A7422904840003EA89B /* OnDemandMap_Clone.xcdatamodeld in Sources */,
-				CD0C8A6E22904840003EA89B /* ViewController.swift in Sources */,
+				CD0C8AB62296E74E003EA89B /* SearchViewController.swift in Sources */,
+				CD0C8A6E22904840003EA89B /* LaunchViewController.swift in Sources */,
+				CD0C8AB12296D792003EA89B /* UIViewController+Ext.swift in Sources */,
+				CD0C8AA122904B1E003EA89B /* LocationManager.swift in Sources */,
 				CD0C8A6C22904840003EA89B /* AppDelegate.swift in Sources */,
+				CD0C8AB922970204003EA89B /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
