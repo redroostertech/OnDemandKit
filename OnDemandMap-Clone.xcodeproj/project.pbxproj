@@ -114,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				CD0C8A6B22904840003EA89B /* AppDelegate.swift */,
+				CD0C8A6D22904840003EA89B /* LaunchViewController.swift */,
 				CD0C8ABE2297026C003EA89B /* Resources */,
 				CD0C8AC12297028C003EA89B /* Core */,
 				CD0C8ABD2297025A003EA89B /* Modules */,
@@ -205,9 +206,8 @@
 		CD0C8AC12297028C003EA89B /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				CD0C8A6D22904840003EA89B /* LaunchViewController.swift */,
-				CD0C8ABB22970239003EA89B /* MapViewController */,
 				CD0C8AB22296DF5D003EA89B /* CustomMapView.swift */,
+				CD0C8ABB22970239003EA89B /* MapViewController */,
 				CD0C8ABA2297022D003EA89B /* SearchViewController */,
 			);
 			path = Core;
